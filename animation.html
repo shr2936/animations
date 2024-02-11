@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>Hey</title>
+	</head>
+	<style>
+		@keyframes rotate {
+			from {
+				transform: rotate(0);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes ltr {
+			from {
+				transform: translate(0, 0);
+			}
+			to {
+				transform: translate(300px, 0);
+			}
+		}
+		@keyframes ttb {
+			from {
+				transform: translate(300px, 0);
+			}
+			to {
+				transform: translate(300px, 300px);
+			}
+		}
+		@keyframes rtl {
+			from {
+				transform: translate(300px, 300px);
+			}
+			to {
+				transform: translate(0, 300px);
+			}
+		}
+		@keyframes btt {
+			from {
+				transform: translate(0, 300px);
+			}
+			to {
+				transform: translate(0, 0);
+			}
+		}
+		@keyframes circular-motion {
+			0% { transform: translate(0, 0); }
+			25% { transform: translate(700px, 0); }
+			50% { transform: translate(700px, 700px); }
+			75% { transform: translate(0, 700px); }
+			100% { transform: translate(0, 0); }
+		}
+		@keyframes ltr-full-screen {
+			from {
+				left: 0; top: 0;
+			}
+			to {
+				left: calc(100% - 100px); top: 0: 
+			}
+		}
+		body {
+			height: 1000px;
+		}
+		.animate {
+			background-color: red;
+			animation: ltr-full-screen 5s linear;
+			animation-iteration-count: 2;
+			height: 80px;
+			width: 80px;
+			margin-left: 20px;
+			position: relative;
+			margin-top: 20px;
+			//animation-timeline: scroll();
+		}
+	</style>
+	<body>
+		<div class="animate"></div>
+	</body>
+</html>
